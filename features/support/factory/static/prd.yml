@@ -1,0 +1,10 @@
+valid_user_data:
+  username: 'testAcc321'
+  password: 'Ab123'
+
+invalid_user_data:
+  username: ''
+  password: ''
+
+message:
+  invalid_login_msg: 'Incorrect user name or password.'
