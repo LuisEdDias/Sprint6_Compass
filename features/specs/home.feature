@@ -15,7 +15,7 @@ Funcionalidade: Home Page
         Então a home page é exibida corretamente
 
     @header_menu
-    Esquema do Cenário: CT_002: Acesso às páginas do menu do header;
+    Esquema do Cenário: CT_002: Acesso às páginas do menu do header
         Quando acessa um link "<link>" da seção "<section>"
         Então é redirecionado corretamente
         Exemplos:
@@ -25,7 +25,7 @@ Funcionalidade: Home Page
         |contact_us|header |
 
     @solutions_menu   
-    Esquema do Cenário: CT_003: Acesso às páginas do menu Solutions;
+    Esquema do Cenário: CT_003: Acesso às páginas do menu Solutions
         Quando acessa um link "<link>" da seção "<section>"
         Então é redirecionado corretamente
         Exemplos:
@@ -37,7 +37,7 @@ Funcionalidade: Home Page
         |admin_page|solutions_menu|
 
     @customer_login_links
-    Esquema do Cenário: CT_004: Acesso às páginas da seção de login;
+    Esquema do Cenário: CT_004: Acesso às páginas da seção de login
         Quando acessa um link "<link>" da seção "<section>"
         Então é redirecionado corretamente
         Exemplos:
@@ -46,7 +46,7 @@ Funcionalidade: Home Page
         |register      |customer_login|
 
     @home_body_links
-    Esquema do Cenário: CT_005: Acesso às páginas da seção principal;
+    Esquema do Cenário: CT_005: Acesso às páginas da seção principal
         Quando acessa um link "<link>" da seção "<section>"
         Então é redirecionado corretamente
         Exemplos:
@@ -55,7 +55,7 @@ Funcionalidade: Home Page
         |services|home_page|
 
     @footer_menu
-    Esquema do Cenário: CT_006: Acesso às páginas do menu do footer; 
+    Esquema do Cenário: CT_006: Acesso às páginas do menu do footer
         Quando acessa um link "<link>" da seção "<section>"
         Então é redirecionado corretamente
         Exemplos:
