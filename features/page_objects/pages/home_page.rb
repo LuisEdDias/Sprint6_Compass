@@ -1,4 +1,8 @@
+require_relative '../sections/top_panel'
 require_relative '../sections/header'
+require_relative '../sections/footer'
+require_relative '../sections/customer_login'
+require_relative '../sections/account_services_menu'
 
 module Pages
     class HomePage < SitePrism::Page
@@ -15,5 +19,7 @@ module Pages
         element :atm_services, 'ul.services'
         element :online_services, 'ul.servicestwo'
         element :btn_services_read_more, '#rightPanel [href="services.htm"]'
+
+        expected_elements :header, :footer, :news_list, :atm_services, :online_services
     end
 end

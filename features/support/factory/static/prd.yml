@@ -8,3 +8,89 @@ invalid_user_data:
 
 message:
   invalid_login_msg: 'Incorrect user name or password.'
+
+header:
+  home:
+    link: 'btn_home'
+    url: 'parabank.parasoft.com/parabank/index.htm'
+  
+  about_us:
+    link: 'btn_about_us'
+    url: 'parabank.parasoft.com/parabank/about.htm'
+
+  contact:
+    link: 'btn_contact'
+    url: 'parabank.parasoft.com/parabank/contact.htm'
+
+solutions_menu:
+  about_us:
+    link: 'btn_about_us'
+    url: 'parabank.parasoft.com/parabank/about.htm'
+  
+  services:
+    link: 'btn_services'
+    url: 'parabank.parasoft.com/parabank/services.htm'
+
+  products:
+    link: 'btn_products'
+    url: 'parasoft.com/products/'
+
+  locations:
+    link: 'btn_locations'
+    url: 'parasoft.com/solutions/'
+
+  admin_page:
+    link: 'btn_admin_page'
+    url: 'parabank.parasoft.com/parabank/admin.htm'
+
+customer_login:
+  login_recovery:
+    link: 'link_login_recovery'
+    url: 'parabank.parasoft.com/parabank/lookup.htm'
+  
+  register:
+    link: 'link_register'
+    url: 'parabank.parasoft.com/parabank/register.htm'
+
+home_body:
+  news:
+    link: 'btn_news_read_more'
+    url: 'parabank.parasoft.com/parabank/news.htm'
+  
+  services:
+    link: 'btn_services_read_more'
+    url: 'parabank.parasoft.com/parabank/services.htm'
+
+footer:
+  home:
+    link: 'btn_home'
+    url: 'parabank.parasoft.com/parabank/index.htm'
+
+  about_us:
+    link: 'btn_about_us'
+    url: 'parabank.parasoft.com/parabank/about.htm'
+  
+  services:
+    link: 'btn_services'
+    url: 'parabank.parasoft.com/parabank/services.htm'
+
+  products:
+    link: 'btn_products'
+    url: 'parasoft.com/products/'
+
+  locations:
+    link: 'btn_locations'
+    url: 'parasoft.com/solutions/'
+
+  forum:
+    link: 'btn_forum'
+    url: 'forums.parasoft.com/'
+
+  site_map:
+    link: 'btn_site_map'
+    url: 'parabank.parasoft.com/parabank/sitemap.htm'
+
+  contact_us:
+    link: 'btn_contact_us'
+    url: 'parabank.parasoft.com/parabank/contact.htm'
+    
