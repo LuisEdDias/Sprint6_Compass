@@ -15,17 +15,18 @@ Funcionalidade: Register
         Então a página de cadastro é exibida corretamente
 
     @validate_registration_form
-    Cenário: CT_008: Validar formulário de cadastro
-        Então a página de cadastro é exibida corretamente
+    Esquema do Cenário: CT_008: Validar formulário de cadastro
+        Quando preenche o formulário de cadastro com dados '<data>'
+        Então o formulário de cadastro exibe um label de erro '<data>'
+        Exemplos:
+        |data                   |
+        |empty                  |
+        |special_character      |
+        |only_numbers           |
+        |username_already_exists|
+        |passwords_not_match    |
 
     @valid_registration
     Cenário: CT_009: Realizar cadastro válido
-        Então a página de cadastro é exibida corretamente
-
-    @invalid_registration
-    Cenário: CT_010: Realizar cadastro inválido
-        Então a página de cadastro é exibida corretamente
-
-    @register_already_registered_username
-    Cenário: CT_011: Realizar cadastro com username já cadastrado
-        Então a página de cadastro é exibida corretamente
+        Quando realiza um cadastro com dados válidos
+        Então é exibida uma menssagem de sucesso

@@ -1,38 +1,36 @@
-valid_user_data:
-  username: 'testAcc321'
-  password: 'Ab123'
-
-invalid_user_data:
-  username: ''
-  password: ''
+admin_user_data:
+  username: 'john'
+  password: 'demo'
 
 message:
-  invalid_login_msg: 'Incorrect user name or password.'
+  account_register_success_message: 'Your account was created successfully. You are now logged in.'
 
 link_url:
   home: 'parabank.parasoft.com/parabank/index.htm'
-  
   about_us: 'parabank.parasoft.com/parabank/about.htm'
-
   contact_us: 'parabank.parasoft.com/parabank/contact.htm'
-
   services: 'parabank.parasoft.com/parabank/services.htm'
-
   products: 'parasoft.com/products/'
-
   locations: 'parasoft.com/solutions/'
-
   admin_page: 'parabank.parasoft.com/parabank/admin.htm'
-
   login_recovery: 'parabank.parasoft.com/parabank/lookup.htm'
-  
   register: 'parabank.parasoft.com/parabank/register.htm'
-
   news: 'parabank.parasoft.com/parabank/news.htm'
-  
   services: 'parabank.parasoft.com/parabank/services.htm'
-
   forum: 'forums.parasoft.com/'
-
   site_map: 'parabank.parasoft.com/parabank/sitemap.htm'
-    
+  
+register_form_label:
+  first_name_required: 'First name is required.'
+  last_name_required: 'Last name is required.'
+  address_required: 'Address is required.'
+  city_required: 'City is required.'
+  state_required: 'State is required.'
+  zip_code_required: 'Zip Code is required.'
+  ssn_required: 'Social Security Number is required.'
+  username_required: 'Username is required.'
+  password_required: 'Password is required.'
+  confirm_password_required: 'Password confirmation is required.'
+  confirm_password_not_match: 'Passwords did not match.'
+  username_already_exists: 'This username already exists.'
+  invalid_data: 'Invalid data.'
