@@ -6,6 +6,11 @@ module Sections
 
         element :btn_home, '.home'
         element :btn_about_us, '.aboutus'
-        element :btn_contact, '.contact'
+        element :btn_contact_us, '.contact'
+
+        def click_link_header link
+                button = 'btn_' + link
+                public_send(button).click
+        end
     end
 end

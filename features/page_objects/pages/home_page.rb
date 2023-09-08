@@ -15,11 +15,26 @@ module Pages
         section :account_services_menu, Sections::AccountServicesMenu, '#leftPanel'
 
         elements :news_list, '.events a'
-        element :btn_news_read_more, '#rightPanel [href="news.htm"]'
+        element :news, '#rightPanel [href="news.htm"]'
         element :atm_services, 'ul.services'
         element :online_services, 'ul.servicestwo'
-        element :btn_services_read_more, '#rightPanel [href="services.htm"]'
+        element :services, '#rightPanel [href="services.htm"]'
 
         expected_elements :header, :footer, :news_list, :atm_services, :online_services
+
+        def click_link link, section
+            case section
+            when 'home_page'
+                public_send(link).click
+            when 'header'
+                header.click_link_header link
+            when 'solutions_menu'
+                header.solutions_menu.click_link_solutions_menu link
+            when 'customer_login'
+                customer_login.click_link_customer_login link
+            when 'footer'
+                footer.click_link_footer link
+            end
+        end
     end
 end

@@ -2,7 +2,7 @@
 
 @regression
 @home
-Funcionalidade: Página inicial
+Funcionalidade: Home Page
     SENDO um usuário do ParaBank
     QUERO navegar na home Page
     PARA acessar as funcionalidades da aplicação
@@ -19,22 +19,22 @@ Funcionalidade: Página inicial
         Quando acessa um link "<link>" da seção "<section>"
         Então é redirecionado corretamente
         Exemplos:
-        |link    |section|
-        |home    |header |
-        |about_us|header |
-        |contact |header |
+        |link      |section|
+        |home      |header |
+        |about_us  |header |
+        |contact_us|header |
 
     @solutions_menu   
     Esquema do Cenário: CT_003: Acesso às páginas do menu Solutions;
-        Quando acessa um link "<link>" do menu Solutions
+        Quando acessa um link "<link>" da seção "<section>"
         Então é redirecionado corretamente
         Exemplos:
-        |link      |
-        |about_us  |
-        |services  |
-        |products  |
-        |locations |
-        |admin_page|
+        |link      |section       |
+        |about_us  |solutions_menu|
+        |services  |solutions_menu|
+        |products  |solutions_menu|
+        |locations |solutions_menu|
+        |admin_page|solutions_menu|
 
     @customer_login_links
     Esquema do Cenário: CT_004: Acesso às páginas da seção de login;
@@ -47,12 +47,12 @@ Funcionalidade: Página inicial
 
     @home_body_links
     Esquema do Cenário: CT_005: Acesso às páginas da seção principal;
-        Quando acessa um link "<link>" da home page
+        Quando acessa um link "<link>" da seção "<section>"
         Então é redirecionado corretamente
         Exemplos:
-        |link    |
-        |news    |
-        |services|
+        |link    |section  |
+        |news    |home_page|
+        |services|home_page|
 
     @footer_menu
     Esquema do Cenário: CT_006: Acesso às páginas do menu do footer; 

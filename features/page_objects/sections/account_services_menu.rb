@@ -9,5 +9,10 @@ module Sections
         element :btn_update_contact_info, '[href$="updateprofile.htm"]'
         element :btn_request_loan, '[href$="requestloan.htm"]'
         element :btn_logout, '[href$="logout.htm"]'
+
+        def click_link_account_services_menu link
+            button = 'btn_' + link
+            public_send(button).click
+        end
     end
 end
