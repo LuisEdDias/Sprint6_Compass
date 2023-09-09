@@ -33,6 +33,8 @@ module Pages
                 header.solutions_menu.click_link_solutions_menu link
             when 'customer_login'
                 customer_login.click_link_customer_login link
+            when 'account_services_menu'
+                account_services_menu.click_link_account_services_menu link
             when 'footer'
                 footer.click_link_footer link
             end

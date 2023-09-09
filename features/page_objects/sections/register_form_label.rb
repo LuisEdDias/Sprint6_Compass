@@ -12,9 +12,9 @@ module Sections
         element :label_confirm_password, '[id="repeatedPassword.errors"]'
         
         def label_error_message data
-            error_message = Factory::Static.static_data 'register_form_label'
-            case data
-            when 'empty'
+            error_message = Factory::Static.static_data 'form_validation_label'
+            
+            if data == 'empty'
                 label_first_name.has_text?(error_message['first_name_required']) &&
                 label_last_name.has_text?(error_message['last_name_required']) &&
                 label_address.has_text?(error_message['address_required']) &&
@@ -25,7 +25,7 @@ module Sections
                 label_username.has_text?(error_message['username_required']) &&
                 label_password.has_text?(error_message['password_required']) &&
                 label_confirm_password.has_text?(error_message['confirm_password_required'])
-            when 'special_character'
+            elsif data == 'special_character' || data == 'only_numbers'
                 label_first_name.has_text?(error_message['invalid_data']) &&
                 label_last_name.has_text?(error_message['invalid_data']) &&
                 label_address.has_text?(error_message['invalid_data']) &&
@@ -33,16 +33,9 @@ module Sections
                 label_state.has_text?(error_message['invalid_data']) &&
                 label_zip_code.has_text?(error_message['invalid_data']) &&
                 label_ssn.has_text?(error_message['invalid_data'])
-            when 'only_numbers'
-                label_first_name.has_text?(error_message['invalid_data']) &&
-                label_last_name.has_text?(error_message['invalid_data']) &&
-                label_address.has_text?(error_message['invalid_data']) &&
-                label_city.has_text?(error_message['invalid_data']) &&
-                label_state.has_text?(error_message['invalid_data']) &&
-                label_username.has_text?(error_message['invalid_data'])
-            when 'username_already_exists'
+            elsif data == 'username_already_exists'
                 label_username.has_text?(error_message['username_already_exists'])
-            when 'passwords_not_match'
+            elsif data == 'passwords_not_match'
                 label_confirm_password.has_text?(error_message['confirm_password_not_match'])
             end
         end
