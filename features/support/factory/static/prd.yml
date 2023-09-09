@@ -1,9 +1,12 @@
 admin_user_data:
   username: 'john'
   password: 'demo'
+  name: 'John Smith'
 
 message:
   account_register_success_message: 'Your account was created successfully. You are now logged in.'
+  login_username_password_incorrect: 'The username and password could not be verified.'
+  login_username_password_empty: 'Please enter a username and password.'
 
 link_url:
   home: 'parabank.parasoft.com/parabank/index.htm'
@@ -19,6 +22,7 @@ link_url:
   services: 'parabank.parasoft.com/parabank/services.htm'
   forum: 'forums.parasoft.com/'
   site_map: 'parabank.parasoft.com/parabank/sitemap.htm'
+  accounts_overview: 'parabank.parasoft.com/parabank/overview.htm'
   
 register_form_label:
   first_name_required: 'First name is required.'

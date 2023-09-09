@@ -15,4 +15,3 @@ end
 Então('é redirecionado corretamente') do
     expect(page.current_url).to include @url
 end
-  

@@ -15,7 +15,7 @@ Funcionalidade: Register
         Então a página de cadastro é exibida corretamente
 
     @validate_registration_form
-    Esquema do Cenário: CT_008: Validar formulário de cadastro
+    Esquema do Cenário: CT_008: Validação do formulário de cadastro
         Quando preenche o formulário de cadastro com dados '<data>'
         Então o formulário de cadastro exibe um label de erro '<data>'
         Exemplos:

@@ -19,6 +19,7 @@ module Pages
         element :atm_services, 'ul.services'
         element :online_services, 'ul.servicestwo'
         element :services, '#rightPanel [href="services.htm"]'
+        element :login_error_message, '#rightPanel p'
 
         expected_elements :header, :footer, :news_list, :atm_services, :online_services
 
