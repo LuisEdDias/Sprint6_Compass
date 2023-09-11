@@ -10,6 +10,8 @@ ENVIRONMENT = ENV['ENVIRONMENT']
 ENVIRONMENT_CONFIG = YAML.load_file(File.dirname(__FILE__) + "/environments/#{ENVIRONMENT}.yml")
 URL = ENVIRONMENT_CONFIG['url']
 
+SELENIUM_WAIT = Selenium::WebDriver::Wait.new(timeout: 10)
+
 Capybara.register_driver :my_chrome do |app|
     caps = Selenium::WebDriver::Remote::Capabilities.chrome('goog:chromeOptions' => { 'args' =>['--ignore-ssl-errors', '--ignore-certificate-errors',
         '--disable-popup-bloking', '--disable-gpu', '--disable-translate', '--no-sandbox', '--acceptInsecureCerts=true',

@@ -15,6 +15,7 @@ module Sections
         element :btn_update_profile, '.button'
 
         def complete_update_profile_form data
+            SELENIUM_WAIT.until { !input_first_name.value.empty? }
             if data == 'empty'
                 input_first_name.set ''
                 input_last_name.set ''
@@ -42,7 +43,7 @@ module Sections
                 input_zip_code.set registration_form[:zip_code]
                 input_phone.set registration_form[:phone]
             end
-            binding.pry
+            
             btn_update_profile.click
         end
     end

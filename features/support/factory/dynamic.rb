@@ -17,7 +17,8 @@ module Factory
                 ssn: Faker::IDNumber.valid,
                 username: Faker::Internet.username,
                 password: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
-                password_two: Faker::Internet.password(min_length: 11, max_length: 13, special_characters: true)
+                password_two: Faker::Internet.password(min_length: 11, max_length: 13, special_characters: true),
+                transfer_amount: Faker::Number.number(digits: 2)
             }
         end
 
@@ -32,7 +33,8 @@ module Factory
                 phone: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
                 ssn: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
                 username: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
-                password: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true)
+                password: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
+                transfer_amount: Faker::Internet.password(min_length: 3, max_length: 5, special_characters: true)
             }
         end
 

@@ -22,6 +22,7 @@ message:
   login_username_password_empty: 'Please enter a username and password.'
   login_recovery_not_found: 'The customer information provided could not be found.'
   update_profile_success_message: 'Your updated address and phone number have been added to the system.'
+  transfer_success_message: 'Transfer Complete!'
 
 link_url:
   home: 'parabank.parasoft.com/parabank/index.htm'
@@ -53,3 +54,7 @@ form_validation_label:
   confirm_password_not_match: 'Passwords did not match.'
   username_already_exists: 'This username already exists.'
   invalid_data: 'Invalid data.'
+  empty_amount: 'The amount cannot be empty.'
+  invalid_amount: 'Please enter a valid amount.'
+  invalid_account: 'Please enter a valid account.'
+  
