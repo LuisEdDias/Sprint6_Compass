@@ -16,6 +16,10 @@ valid_user_data:
   username: 'testAccount'
   password: '#Test123'
 
+valid_loan_data:
+  loan_amount: '1000'
+  down_payment: '100'
+  
 message:
   account_register_success_message: 'Your account was created successfully. You are now logged in.'
   login_username_password_incorrect: 'The username and password could not be verified.'
@@ -23,6 +27,7 @@ message:
   login_recovery_not_found: 'The customer information provided could not be found.'
   update_profile_success_message: 'Your updated address and phone number have been added to the system.'
   transfer_success_message: 'Transfer Complete!'
+  unknown_error: 'An internal error has occurred and has been logged.'
 
 link_url:
   home: 'parabank.parasoft.com/parabank/index.htm'

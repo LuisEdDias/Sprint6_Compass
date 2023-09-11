@@ -18,7 +18,7 @@ Funcionalidade: Request Loan
         @validate_request_loan_form
         Esquema do Cenário: CT_030: Validação do formulário de empréstimos
             Quando realiza um empréstimo com dados '<data>'
-            Então deve ver uma mensagem de transferência não realizada '<data>'
+            Então deve ver uma mensagem de empréstimo não realizado
             Exemplos:
             |data             |
             |empty            |
@@ -30,4 +30,5 @@ Funcionalidade: Request Loan
         @valid_request_loan
         Cenário: CT_031: Realizar empréstimo válido
             Quando realiza um empréstimo com dados válidos
-            Então deve ver uma mensagem de transferência não realizada com sucesso
+            Então deve ver uma mensagem de empréstimo realizado com sucesso
+            E as contas de origem e empréstimo estão com o saldo correto
