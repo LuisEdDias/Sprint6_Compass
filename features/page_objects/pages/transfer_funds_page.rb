@@ -43,6 +43,10 @@ module Pages
                 input_transfer_amount.set (0 - transfer_amount[:transfer_amount])
                 select_origin_account.first.click
                 select_target_account.last.click
+            when 'amount_zero'
+                input_transfer_amount.set 0
+                select_origin_account.first.click
+                select_target_account.last.click
             when 'account_same_origin_destination'
                 transfer_amount = Factory::Dynamic.valid_data_form
                 input_transfer_amount.set transfer_amount[:transfer_amount]
@@ -53,7 +57,7 @@ module Pages
                 select_origin_account.first.click
                 select_target_account.last.click
             end
-
+            
             btn_transfer.click
         end
 
@@ -62,7 +66,7 @@ module Pages
             
             if data == 'amount_empty'
                 transfer_amount_label.has_text?(label_error['empty_amount'])
-            elsif data == 'amount_special_character' || data == 'amount_letters' || data == 'amount_negative'
+            elsif data == 'amount_special_character' || data == 'amount_letters' || data == 'amount_negative' || data == 'amount_zero'
                 transfer_amount_label.has_text?(label_error['invalid_amount'])
             elsif data == 'account_same_origin_destination'
                 transfer_amount_label.has_text?(label_error['invalid_account'])

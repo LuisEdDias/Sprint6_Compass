@@ -6,6 +6,7 @@ module Factory
     class Dynamic
         def self.valid_data_form
             {
+                name: Faker::Name.name_with_middle,
                 first_name: Faker::Name.first_name,
                 last_name: Faker::Name.last_name,
                 email: Faker::Internet.email,
@@ -18,12 +19,15 @@ module Factory
                 username: Faker::Internet.username,
                 password: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
                 password_two: Faker::Internet.password(min_length: 11, max_length: 13, special_characters: true),
-                transfer_amount: Faker::Number.number(digits: 2)
+                transfer_amount: Faker::Number.decimal(l_digits: 2),
+                account_number: Faker::Number.number(digits: 4),
+                account_number_two: Faker::Number.number(digits: 4)
             }
         end
 
         def self.special_character_form
-            {
+            {   
+                name: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
                 first_name: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
                 last_name: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
                 address: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
@@ -34,12 +38,14 @@ module Factory
                 ssn: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
                 username: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
                 password: Faker::Internet.password(min_length: 8, max_length: 12, special_characters: true),
-                transfer_amount: Faker::Internet.password(min_length: 3, max_length: 5, special_characters: true)
+                transfer_amount: Faker::Internet.password(min_length: 3, max_length: 5, special_characters: true),
+                account_number: Faker::Internet.password(min_length: 3, max_length: 5, special_characters: true)
             }
         end
 
         def self.only_numbers_form
             {
+                name: Faker::Number.number(digits: 10),
                 first_name: Faker::Number.number(digits: 10),
                 last_name: Faker::Number.number(digits: 10),
                 address: Faker::Number.number(digits: 10),
@@ -49,7 +55,9 @@ module Factory
                 phone: Faker::Number.number(digits: 10),
                 ssn: Faker::Number.number(digits: 10),
                 username: Faker::Number.number(digits: 10),
-                password: Faker::Number.number(digits: 10)
+                password: Faker::Number.number(digits: 10),
+                transfer_amount: Faker::Number.number(digits: 3),
+                account_number: Faker::Number.number(digits: 4)
             }
         end
     end

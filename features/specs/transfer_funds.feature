@@ -24,6 +24,7 @@ Funcionalidade: Transfer Funds
         |amount_special_character       |
         |amount_letters                 |
         |amount_negative                |
+        |amount_zero                    |
         |account_same_origin_destination|
 
     @transfer_funds
@@ -31,3 +32,4 @@ Funcionalidade: Transfer Funds
         Quando realiza uma transferência válida
         Então deve ver uma mensagem de transferência transferência realizada com sucesso
         E as contas de origem e destino estão com os valores corretos
+        

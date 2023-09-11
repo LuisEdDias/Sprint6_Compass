@@ -57,4 +57,8 @@ form_validation_label:
   empty_amount: 'The amount cannot be empty.'
   invalid_amount: 'Please enter a valid amount.'
   invalid_account: 'Please enter a valid account.'
-  
+  payee_name_required: 'Payee name is required.'
+  phone_required: 'Phone number is required.'
+  account_number_required: 'Account number is required.'
+  account_number_invalid: 'Please enter a valid number.'
+  account_not_match: 'The account numbers do not match.'
