@@ -6,7 +6,7 @@ require 'date'
 
 module Pages
     class AccountDetailsPage < SitePrism::Page
-        set_url '/activity.htm'
+        set_url '/activity.htm{?id*}'
 
         section :top_panel, Sections::TopPanel, '#topPanel'
         section :header, Sections::Header, '#headerPanel'
@@ -18,6 +18,7 @@ module Pages
         elements :transactions_list, '#transactionTable a'
         elements :credit_transactions, '#transactionTable [ng-if*="Credit"]'
         elements :debit_transactions, '#transactionTable [ng-if*="Debit"]'
+        elements :amount_transactions, '#transactionTable td+td.ng-binding'
 
         element :transactions_table, '#transactionTable'
         element :transactions_not_found, '#rightPanel p'
