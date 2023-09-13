@@ -28,6 +28,7 @@ message:
   update_profile_success_message: 'Your updated address and phone number have been added to the system.'
   transfer_success_message: 'Transfer Complete!'
   unknown_error: 'An internal error has occurred and has been logged.'
+  no_transactions_found: 'No transactions found.'
 
 link_url:
   home: 'parabank.parasoft.com/parabank/index.htm'

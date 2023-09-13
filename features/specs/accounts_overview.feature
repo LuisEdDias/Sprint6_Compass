@@ -20,28 +20,20 @@ Funcionalidade: Accounts Overview
         E acessa uma conta específica
         Então são exibidas as movimentações da conta
 
-    @check_activity_filter_by_type
-    Esquema do Cenário: CT_034: Verificar os filtros de busca por tipo de movimentação
+    @check_activity_filter
+    Esquema do Cenário: CT_034: Verificar os filtros de busca por movimentação
         E acessa uma conta específica
         Quando filtra as movimentações por tipo '<type>'
         Então a lista de movimentações exibe o resultado corretamente '<type>'
         Exemplos:
-        |type  |
-        |credit|
-        |debit |   
-
-    @check_activity_filter_by_type
-    Cenário: CT_035: Verificar os filtros de busca de movimentação por período
-        E acessa uma conta específica
-        Quando filtra as movimentações por período '<type>'
-        Então a lista de movimentações exibe o resultado corretamente '<type>'
-        Exemplos:
         |type   |
+        |credit |
+        |debit  |   
         |valid  |
-        |invalid|  
-
+        |invalid|
+          
     @check_activity_details
-    Cenário: CT_036: Verificar o acesso aos detalhes de uma transação
+    Cenário: CT_035: Verificar o acesso aos detalhes de uma transação
         E acessa uma conta específica
         Quando acessa uma uma movimentação
         Então a página de detalhes da transação é exibida corretamente

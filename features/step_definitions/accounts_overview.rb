@@ -1,35 +1,35 @@
 Dado('que acessa a página de visualização geral das contas') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @home.click_link 'accounts_overview', 'account_services_menu'
+    @accounts_overview = Pages::AccountsOverviewPage.new
 end
   
 Então('a página de visualização geral das contas é exibida corretamente') do
-    pending # Write code here that turns the phrase above into concrete actions
+    expect(@accounts_overview.all_there?).to be_truthy
 end
   
 Dado('acessa uma conta específica') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @accounts_overview.accounts_list.first.account_number.click
+    @account_datails_page = Pages::AccountDetailsPage.new
 end
   
 Então('são exibidas as movimentações da conta') do
-    pending # Write code here that turns the phrase above into concrete actions
+    expect(@account_datails_page.all_there?).to be_truthy
 end
   
-Quando('filtra as movimentações por tipo {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-end
-
-Quando('filtra as movimentações por período {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+Quando('filtra as movimentações por tipo {string}') do |type|
+    @account_datails_page.filter_by type
 end
   
-Então('a lista de movimentações exibe o resultado corretamente {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+Então('a lista de movimentações exibe o resultado corretamente {string}') do |type|
+    result = @account_datails_page.filter_return type
+    expect(result).to be_truthy
 end
   
 Quando('acessa uma uma movimentação') do
-    pending # Write code here that turns the phrase above into concrete actions
+    @account_datails_page.transactions_list.first.click
+    @transaction_page = Pages::TransactionPage.new
 end
   
 Então('a página de detalhes da transação é exibida corretamente') do
-    pending # Write code here that turns the phrase above into concrete actions
+    expect(@transaction_page.all_there?).to be_truthy
 end
