@@ -15,6 +15,7 @@ module Pages
         section :footer, Sections::Footer, '#footermainPanel'
         section :account_services_menu, Sections::AccountServicesMenu, '#leftPanel'
 
+        element :select_admin_account, '#accountTable a[href$="id=13344"]'
         element :account_total_balance, '#accountTable tbody tr b.ng-binding'
 
         expected_elements :header, :footer, :account_services_menu, :account_list

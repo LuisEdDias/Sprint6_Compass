@@ -8,7 +8,7 @@ Então('a página de visualização geral das contas é exibida corretamente') d
 end
   
 Dado('acessa uma conta específica') do
-    @accounts_overview.accounts_list.first.account_number.click
+    @accounts_overview.select_admin_account.click
     @account_datails_page = Pages::AccountDetailsPage.new
 end
   

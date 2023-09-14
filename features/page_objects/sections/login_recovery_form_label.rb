@@ -7,11 +7,11 @@ module Sections
         element :label_state, '[id="address.state.errors"]'
         element :label_zip_code, '[id="address.zipCode.errors"]'
         element :label_ssn, '[id="ssn.errors"]'
+        element :user_not_found_message, '#rightPanel p'
         
         def label_error_message data
-            error_message = Factory::Static.static_data 'form_validation_label'
-  
             if data == 'empty'
+                error_message = Factory::Static.static_data 'form_validation_label'
                 label_first_name.has_text?(error_message['first_name_required']) &&
                 label_last_name.has_text?(error_message['last_name_required']) &&
                 label_address.has_text?(error_message['address_required']) &&
@@ -20,13 +20,8 @@ module Sections
                 label_zip_code.has_text?(error_message['zip_code_required']) &&
                 label_ssn.has_text?(error_message['ssn_required'])
             elsif data == 'special_character' || data == 'only_numbers'
-                label_first_name.has_text?(error_message['invalid_data']) &&
-                label_last_name.has_text?(error_message['invalid_data']) &&
-                label_address.has_text?(error_message['invalid_data']) &&
-                label_city.has_text?(error_message['invalid_data']) &&
-                label_state.has_text?(error_message['invalid_data']) &&
-                label_zip_code.has_text?(error_message['invalid_data']) &&
-                label_ssn.has_text?(error_message['invalid_data'])
+                error_message = Factory::Static.static_data 'message'
+                user_not_found_message.has_text?(error_message['login_recovery_not_found'])
             end
         end
     end

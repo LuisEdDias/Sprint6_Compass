@@ -74,7 +74,6 @@ module Sections
                     end
                 end
             end
-
             btn_register.click
         end
     end

@@ -18,12 +18,14 @@ module Sections
                 label_state.has_text?(error_message['state_required']) &&
                 label_zip_code.has_text?(error_message['zip_code_required'])
             elsif data == 'special_character' || data == 'only_numbers'
-                label_first_name.has_text?(error_message['invalid_data']) &&
-                label_last_name.has_text?(error_message['invalid_data']) &&
-                label_address.has_text?(error_message['invalid_data']) &&
-                label_city.has_text?(error_message['invalid_data']) &&
-                label_state.has_text?(error_message['invalid_data']) &&
-                label_zip_code.has_text?(error_message['invalid_data'])
+                false
+                #SEM VALIDAÇÃO
+                #label_first_name.has_text?(error_message['invalid_data']) &&
+                #label_last_name.has_text?(error_message['invalid_data']) &&
+                #label_address.has_text?(error_message['invalid_data']) &&
+                #label_city.has_text?(error_message['invalid_data']) &&
+                #label_state.has_text?(error_message['invalid_data']) &&
+                #label_zip_code.has_text?(error_message['invalid_data'])
             end
         end
     end

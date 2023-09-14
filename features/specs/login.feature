@@ -44,8 +44,7 @@ Funcionalidade: Login
 
     @login_recovery
     Cenário: CT_014: Realizar recuperação de login válida
-        Dado que exista um usuário registrado com dados conhecidos
-        E que esteja na página de recuperação de login
+        Dado que esteja na página de recuperação de login
         Quando preenche o formulário de recuperação de login com dados validos
         Então o login é recuperado com sucesso
 

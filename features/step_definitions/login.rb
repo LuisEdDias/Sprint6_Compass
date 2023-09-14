@@ -36,12 +36,6 @@ Então('o formulário de recuperação de login exibe um label de erro {string}'
     expect(@forgot_login_page.login_recovery_form.login_recovery_form_label.label_error_message data).to be_truthy
 end
 
-Dado('que exista um usuário registrado com dados conhecidos') do
-    @register_page = Pages::RegisterPage.new
-    @register_page.load
-    @register_page.register_form.complete_registration_form 'valid_user_data'
-end
-
 Quando('preenche o formulário de recuperação de login com dados validos') do
     @forgot_login_page.login_recovery_form.complete_recovery_form 'valid_user_data'
 end
