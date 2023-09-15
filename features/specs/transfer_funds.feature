@@ -7,8 +7,8 @@ Funcionalidade: Transfer Funds
     QUERO realizar acessar a funcionalidade de transferência
     PARA realizar transferências entre contas
 
-    Contexto: Estar logado, na página de transferências e que existam mais de uma conta
-        Dado que esteja logado, na página de transferências e que existam mais de uma conta
+    Contexto: Estar logado e na página de transferências
+        Dado que esteja logado e na página de transferências
 
     @transfer_page_load
     Cenário: CT_023: Verificar carregamento da página de transferências
@@ -30,6 +30,6 @@ Funcionalidade: Transfer Funds
     @transfer_funds
     Cenário: CT_025: Realizar transferência válida
         Quando realiza uma transferência válida
-        Então deve ver uma mensagem de transferência transferência realizada com sucesso
+        Então deve ver uma mensagem de transferência realizada com sucesso
         E as contas de origem e destino estão com os valores corretos
         

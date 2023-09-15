@@ -26,13 +26,15 @@ module Sections
                 label_password.has_text?(error_message['password_required']) &&
                 label_confirm_password.has_text?(error_message['confirm_password_required'])
             elsif data == 'special_character' || data == 'only_numbers'
-                label_first_name.has_text?(error_message['invalid_data']) &&
-                label_last_name.has_text?(error_message['invalid_data']) &&
-                label_address.has_text?(error_message['invalid_data']) &&
-                label_city.has_text?(error_message['invalid_data']) &&
-                label_state.has_text?(error_message['invalid_data']) &&
-                label_zip_code.has_text?(error_message['invalid_data']) &&
-                label_ssn.has_text?(error_message['invalid_data'])
+                false
+                #SEM VALIDAÇÃO
+                #label_first_name.has_text?(error_message['invalid_data']) &&
+                #label_last_name.has_text?(error_message['invalid_data']) &&
+                #label_address.has_text?(error_message['invalid_data']) &&
+                #label_city.has_text?(error_message['invalid_data']) &&
+                #label_state.has_text?(error_message['invalid_data']) && 
+                #label_zip_code.has_text?(error_message['invalid_data']) &&
+                #label_ssn.has_text?(error_message['invalid_data'])
             elsif data == 'username_already_exists'
                 label_username.has_text?(error_message['username_already_exists'])
             elsif data == 'passwords_not_match'

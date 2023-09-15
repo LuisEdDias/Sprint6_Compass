@@ -17,7 +17,7 @@ module Pages
         element :btn_submit, '.button[value="Submit"]'
 
         def server_config
-            if btn_jms_start.visible?
+            if self.has_btn_jms_start?
                 btn_jms_start.click
             end
 
@@ -26,7 +26,7 @@ module Pages
             input_rest_endpoint.set ''
             input_loan_endpoint.set ''
             input_initial_balance.set '5000'
-            input_minimum_balance.set '100'
+            input_minimum_balance.set '1000'
             select_loan_provider_local.click
             select_loan_processor_down_payment.click
             input_loan_processor_threshold.set '5'

@@ -54,8 +54,8 @@ module Pages
                 select_target_account.first.click
             else
                 input_transfer_amount.set data
-                select_origin_account.first.click
-                select_target_account.last.click
+                select_origin_account.last.click
+                select_target_account.first.click
             end
             
             btn_transfer.click

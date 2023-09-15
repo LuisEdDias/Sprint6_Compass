@@ -28,7 +28,7 @@ Funcionalidade: Accounts Overview
         Exemplos:
         |type   |
         |credit |
-        |debit  |   
+        |debit  |
         |valid  |
         |invalid|
           

@@ -33,7 +33,7 @@ Quando('preenche o formulário de recuperação de login com dados {string}') do
 end
   
 Então('o formulário de recuperação de login exibe um label de erro {string}') do |data|
-    expect(@forgot_login_page.login_recovery_form.login_recovery_form_label.label_error_message data).to be_truthy
+    expect(@forgot_login_page.error_message data).to be_truthy
 end
 
 Quando('preenche o formulário de recuperação de login com dados validos') do

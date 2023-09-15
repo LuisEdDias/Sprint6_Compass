@@ -1,9 +1,5 @@
-require_relative 'login_recovery_form_label'
-
 module Sections
     class LoginRecoveryForm < SitePrism::Section
-        section :login_recovery_form_label, Sections::LoginRecoveryFormLabel, '.form2'
-
         element :input_first_name, '[name="firstName"]'
         element :input_last_name, '[name="lastName"]'
         element :input_address, '[name="address.street"]'
@@ -13,6 +9,13 @@ module Sections
         element :input_ssn, '[name="ssn"]'
         element :btn_find_my_login, '.button'
 
+        element :label_first_name, '[id="firstName.errors"]'
+        element :label_last_name, '[id="lastName.errors"]'
+        element :label_address, '[id="address.street.errors"]'
+        element :label_city, '[id="address.city.errors"]'
+        element :label_state, '[id="address.state.errors"]'
+        element :label_zip_code, '[id="address.zipCode.errors"]'
+        element :label_ssn, '[id="ssn.errors"]'
 
         def complete_recovery_form data
             if data != 'empty'

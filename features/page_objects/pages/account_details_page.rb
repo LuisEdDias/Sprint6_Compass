@@ -45,7 +45,7 @@ module Pages
                 else
                     select_filter_by_month[current_month - 1].click
                 end
-            end
+            end 
             btn_go.click
         end
 
@@ -53,9 +53,9 @@ module Pages
             sleep 1
             case type
             when 'credit'
-                credit_transactions.all? { |item| item.has_text?(/\S/) }
+                !debit_transactions.all? { |item| item.has_text?(/\S/) }
             when 'debit'
-                debit_transactions.all? { |item| item.has_text?(/\S/) }
+                !credit_transactions.all? { |item| item.has_text?(/\S/) }
             when 'valid'
                 transactions_table.visible?
             when 'invalid'
