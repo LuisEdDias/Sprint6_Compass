@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'cucumber'
 gem 'capybara'
-gem 'selenium-webdriver'
+gem 'selenium-webdriver', '>= 4.0.0'
 gem 'rspec'
 gem 'site_prism'
 gem 'pry'

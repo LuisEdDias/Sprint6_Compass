@@ -39,7 +39,7 @@ Capybara.register_driver :my_chrome do |app|
 
     client = Selenium::WebDriver::Remote::Http::Default.new
     client.read_timeout = 90
-    options = { browser: :chrome, desired_capabilities: caps, http_client: client }
+    options = { browser: :chrome, capabilities: caps, http_client: client }
     Capybara::Selenium::Driver.new(app, options)
 end
 
@@ -69,7 +69,7 @@ Capybara.register_driver :my_edge do |app|
   
     client = Selenium::WebDriver::Remote::Http::Default.new
     client.read_timeout = 90
-    options = { browser: :edge, desired_capabilities: caps, http_client: client }
+    options = { browser: :edge, capabilities: caps, http_client: client }
     Capybara::Selenium::Driver.new(app, options)
 end
 
