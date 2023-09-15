@@ -63,13 +63,42 @@ Capybara.register_driver :my_edge do |app|
     )
   
     if ENV['HEADLESS']
-      caps['ms:edgeOptions']['args'] << '--headless'
-      caps['ms:edgeOptions']['args'] << '--disable-site-isolation-trials'
+        caps['ms:edgeOptions']['args'] << '--headless'
+        caps['ms:edgeOptions']['args'] << '--disable-site-isolation-trials'
     end
   
     client = Selenium::WebDriver::Remote::Http::Default.new
     client.read_timeout = 90
     options = { browser: :edge, capabilities: caps, http_client: client }
+    Capybara::Selenium::Driver.new(app, options)
+end
+
+Capybara.register_driver :my_firefox do |app|
+    caps = Selenium::WebDriver::Remote::Capabilities.firefox(
+        'moz:firefoxOptions' => {
+            'args' => [
+                '--ignore-ssl-errors',
+                '--ignore-certificate-errors',
+                '--disable-popup-blocking',
+                '--disable-gpu',
+                '--disable-translate',
+                '--no-sandbox',
+                '--acceptInsecureCerts=true',
+                '--disable-impl-side-painting',
+                '--private',
+                '--window-size=1420,835'
+            ]
+        }
+    )
+  
+    if ENV['HEADLESS']
+        caps['moz:firefoxOptions']['args'] << '--headless'
+        caps['moz:firefoxOptions']['args'] << '--disable-site-isolation-trials'
+    end
+  
+    client = Selenium::WebDriver::Remote::Http::Default.new
+    client.read_timeout = 90
+    options = { browser: :firefox, capabilities: caps, http_client: client }
     Capybara::Selenium::Driver.new(app, options)
 end
 

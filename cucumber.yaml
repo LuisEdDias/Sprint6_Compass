@@ -1,7 +1,6 @@
-default: --format pretty -p prd -p chrome -p html --tags @open_account
-default_hml: -p hml -p chrome
 server_config: -p prd -p chrome -p headless --tags @server_config
-default_edge: --format pretty -p prd -p edge -p html --tags @open_account
+default: --format pretty -p prd -p html --tags @regression
+default_scenario:  --format pretty -p prd -p html
 
 # Reporters
 html: --format html --out=reports/report.html
@@ -13,6 +12,7 @@ prd: ENVIRONMENT='prd'
 #Browsers
 chrome: BROWSER='my_chrome'
 edge: BROWSER='my_edge'
+firefox: BROWSER='my_firefox'
 
 # Visual Model
 headless: HEADLESS='true'
