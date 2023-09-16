@@ -1,3 +1,5 @@
+gpt_key: 'SUA KEY'
+
 admin_user_data:
   username: 'john'
   password: 'demo'
