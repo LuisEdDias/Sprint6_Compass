@@ -13,7 +13,7 @@ Caso um cenário de teste falhe durante a execução um prompt é gerado utiliza
 
 Embora da forma que foi implementada a solução não tenha valor real de utilização, sua elaboração foi importante em relação ao aprendizado adquirido, servindo de base para utilização de inteligência artificial em projetos futuros já que essa tecnologia é cada vez mais relevante.
 
-## Mapa do site Advantage Online Shopping
+## Mapa do site ParaBank
 
 Você pode encontrar o arquivo do mapa [clicando aqui](/mapa-mental)
 
