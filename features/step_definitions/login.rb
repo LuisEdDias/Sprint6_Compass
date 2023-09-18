@@ -37,11 +37,11 @@ Então('o formulário de recuperação de login exibe um label de erro {string}'
 end
 
 Quando('preenche o formulário de recuperação de login com dados validos') do
-    @forgot_login_page.login_recovery_form.complete_recovery_form 'valid_user_data'
+    @forgot_login_page.login_recovery_form.complete_recovery_form 'admin_user_data'
 end
   
 Então('o login é recuperado com sucesso') do
-    login = Factory::Static.static_data('valid_user_data')
+    login = Factory::Static.static_data('admin_user_data')
     expect(@forgot_login_page.login_recovery_success_message.has_text?(login['username'])).to be_truthy
     expect(@forgot_login_page.login_recovery_success_message.has_text?(login['password'])).to be_truthy
 end

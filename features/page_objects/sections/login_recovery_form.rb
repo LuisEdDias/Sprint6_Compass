@@ -37,8 +37,8 @@ module Sections
                     input_state.set login_recovery_form[:state]
                     input_zip_code.set login_recovery_form[:zip_code]
                     input_ssn.set login_recovery_form[:ssn]
-                elsif data == 'valid_user_data'
-                    valid_user_data = Factory::Static.static_data 'valid_user_data'
+                elsif data == 'admin_user_data'
+                    valid_user_data = Factory::Static.static_data 'admin_user_data'
                     input_first_name.set valid_user_data['first_name']
                     input_last_name.set valid_user_data['last_name']
                     input_address.set valid_user_data['address']

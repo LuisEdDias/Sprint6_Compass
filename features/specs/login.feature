@@ -68,9 +68,9 @@ Funcionalidade: Login
         Então o formulário de atualização de dados de contato exibe um label de erro '<data>'
         Exemplos:
         |data             |
-        |empty            |
         |special_character|
         |only_numbers     |
+        |empty            |
 
     @update_profile
     Cenário: CT_018: Realizar atualização dos dados de contato

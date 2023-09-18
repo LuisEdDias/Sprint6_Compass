@@ -33,9 +33,9 @@ module Pages
                     input_loan_amount.set loan_data[:first_name]
                     input_down_payment.set loan_data[:first_name]
                 when 'negative'
-                    loan_data = Factory::Dynamic.valid_data_form
-                    input_loan_amount.set (0 - loan_data[:transfer_amount])
-                    input_down_payment.set (0 - loan_data[:transfer_amount])
+                    loan_data = Factory::Static.static_data('valid_loan_data')
+                    input_loan_amount.set (0 - loan_data['loan_amount'])
+                    input_down_payment.set (0 - loan_data['down_payment'])
                 when 'zero'
                     input_loan_amount.set 0
                     input_down_payment.set 0

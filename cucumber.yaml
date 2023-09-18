@@ -1,6 +1,4 @@
-server_config: -p prd -p chrome -p headless --tags @server_config
-default: --format pretty -p prd -p html --tags @regression
-default_scenario:  --format pretty -p prd -p html
+default: --format pretty -p prd -p html
 
 # Reporters
 html: --format html --out=reports/report.html

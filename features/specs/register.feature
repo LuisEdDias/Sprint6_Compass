@@ -20,9 +20,9 @@ Funcionalidade: Register
         Então o formulário de cadastro exibe um label de erro '<data>'
         Exemplos:
         |data                   |
-        |empty                  |
         |special_character      |
         |only_numbers           |
+        |empty                  |
         |username_already_exists|
         |passwords_not_match    |
 

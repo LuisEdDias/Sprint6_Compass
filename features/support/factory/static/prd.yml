@@ -1,73 +1,69 @@
-gpt_key: 'SUA KEY'
-
+---
+gpt_key: YOUR KEY
 admin_user_data:
-  username: 'john'
-  password: 'demo'
-  name: 'John Smith'
+  id: '12212'
+  username: john
+  password: demo
+  name: John Smith
+  first_name: John
+  last_name: Smith
+  address: 1431 Main St
+  city: Beverly Hills
+  state: CA
+  zip_code: '90210'
+  phone: 310-447-4121
+  ssn: 622-11-9999
   account_id: '13344'
-
-valid_user_data:
-  first_name: 'Test'
-  last_name: 'Account'
-  email: 'test@test.com'
-  address: '833 Sheila Stravenue'
-  city: 'Lake Theodore'
-  state: 'Connecticut'
-  zip_code: '82943'
-  phone: '4233625865'
-  ssn: '763012341'
-  username: 'testAccount'
-  password: '#Test123'
-
+  second_account_id: '13455'
+  valid_transaction_id: '14698'
+  valid_transaction_amount: '50'
 valid_loan_data:
   loan_amount: '1000'
   down_payment: '100'
-  
 message:
-  account_register_success_message: 'Your account was created successfully. You are now logged in.'
-  login_username_password_incorrect: 'The username and password could not be verified.'
-  login_username_password_empty: 'Please enter a username and password.'
-  login_recovery_not_found: 'The customer information provided could not be found.'
-  update_profile_success_message: 'Your updated address and phone number have been added to the system.'
-  transfer_success_message: 'Transfer Complete!'
-  unknown_error: 'An internal error has occurred and has been logged.'
-  no_transactions_found: 'No transactions found.'
-
+  account_register_success_message: Your account was created successfully. You are
+    now logged in.
+  login_username_password_incorrect: The username and password could not be verified.
+  login_username_password_empty: Please enter a username and password.
+  login_recovery_not_found: The customer information provided could not be found.
+  update_profile_success_message: Your updated address and phone number have been
+    added to the system.
+  transfer_success_message: Transfer Complete!
+  unknown_error: An internal error has occurred and has been logged.
+  no_transactions_found: No transactions found.
 link_url:
-  home: 'parabank.parasoft.com/parabank/index.htm'
-  about_us: 'parabank.parasoft.com/parabank/about.htm'
-  contact_us: 'parabank.parasoft.com/parabank/contact.htm'
-  services: 'parabank.parasoft.com/parabank/services.htm'
-  products: 'parasoft.com/products/'
-  locations: 'parasoft.com/solutions/'
-  admin_page: 'parabank.parasoft.com/parabank/admin.htm'
-  login_recovery: 'parabank.parasoft.com/parabank/lookup.htm'
-  register: 'parabank.parasoft.com/parabank/register.htm'
-  news: 'parabank.parasoft.com/parabank/news.htm'
-  services: 'parabank.parasoft.com/parabank/services.htm'
-  forum: 'forums.parasoft.com/'
-  site_map: 'parabank.parasoft.com/parabank/sitemap.htm'
-  accounts_overview: 'parabank.parasoft.com/parabank/overview.htm'
-  
+  home: parabank.parasoft.com/parabank/index.htm
+  about_us: parabank.parasoft.com/parabank/about.htm
+  contact_us: parabank.parasoft.com/parabank/contact.htm
+  services: parabank.parasoft.com/parabank/services.htm
+  products: parasoft.com/products/
+  locations: parasoft.com/solutions/
+  admin_page: parabank.parasoft.com/parabank/admin.htm
+  login_recovery: parabank.parasoft.com/parabank/lookup.htm
+  register: parabank.parasoft.com/parabank/register.htm
+  news: parabank.parasoft.com/parabank/news.htm
+  forum: forums.parasoft.com/
+  site_map: parabank.parasoft.com/parabank/sitemap.htm
+  accounts_overview: parabank.parasoft.com/parabank/overview.htm
 form_validation_label:
-  first_name_required: 'First name is required.'
-  last_name_required: 'Last name is required.'
-  address_required: 'Address is required.'
-  city_required: 'City is required.'
-  state_required: 'State is required.'
-  zip_code_required: 'Zip Code is required.'
-  ssn_required: 'Social Security Number is required.'
-  username_required: 'Username is required.'
-  password_required: 'Password is required.'
-  confirm_password_required: 'Password confirmation is required.'
-  confirm_password_not_match: 'Passwords did not match.'
-  username_already_exists: 'This username already exists.'
-  invalid_data: 'Invalid data.'
-  empty_amount: 'The amount cannot be empty.'
-  invalid_amount: 'Please enter a valid amount.'
-  invalid_account: 'Please enter a valid account.'
-  payee_name_required: 'Payee name is required.'
-  phone_required: 'Phone number is required.'
-  account_number_required: 'Account number is required.'
-  account_number_invalid: 'Please enter a valid number.'
-  account_not_match: 'The account numbers do not match.'
+  first_name_required: First name is required.
+  last_name_required: Last name is required.
+  address_required: Address is required.
+  city_required: City is required.
+  state_required: State is required.
+  zip_code_required: Zip Code is required.
+  ssn_required: Social Security Number is required.
+  username_required: Username is required.
+  password_required: Password is required.
+  confirm_password_required: Password confirmation is required.
+  confirm_password_not_match: Passwords did not match.
+  username_already_exists: This username already exists.
+  invalid_data: Invalid data.
+  empty_amount: The amount cannot be empty.
+  invalid_amount: Please enter a valid amount.
+  invalid_account: Please enter a valid account.
+  payee_name_required: Payee name is required.
+  phone_required: Phone number is required.
+  account_number_required: Account number is required.
+  account_number_invalid: Please enter a valid number.
+  account_not_match: The account numbers do not match.

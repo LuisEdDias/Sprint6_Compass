@@ -21,10 +21,10 @@ Funcionalidade: Request Loan
         Então deve ver uma mensagem de empréstimo não realizado
         Exemplos:
         |data             |
+        |negative         |
         |empty            |
         |special_character|
         |letters          |
-        |negative         |
         |zero             |
 
     @valid_request_loan

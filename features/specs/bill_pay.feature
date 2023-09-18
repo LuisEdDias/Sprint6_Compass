@@ -21,12 +21,12 @@ Funcionalidade: Bill Pay
         Então deve ver uma mensagem de pagamneto não realizado '<data>'
         Exemplos:
         |data                     |
+        |amount_negative          |
+        |amount_zero              |
         |empty                    |
         |special_character        |
         |letters                  |
         |only_numbers             |
-        |amount_negative          |
-        |amount_zero              |
         |account_numbers_not_match|
 
     @valid_bill_payment

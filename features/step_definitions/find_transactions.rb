@@ -1,8 +1,7 @@
 Dado('que acessa a página de busca por transação') do
     @home.click_link 'find_transactions', 'account_services_menu'
     @find_transactions_page = Pages::FindTransactionsPage.new
-    @admin_account_id = Factory::Static.static_data('admin_user_data')['account_id']
-    @account_datails_page = Pages::AccountDetailsPage.new
+    @admin_data = Factory::Static.static_data('admin_user_data')
 end
   
 Então('a página de de busca por transações é exibida corretamente') do
@@ -10,11 +9,7 @@ Então('a página de de busca por transações é exibida corretamente') do
 end
   
 Quando('busca por transação por id {string}') do |type|
-    @account_datails_page.load(id: @admin_account_id)
-    @account_datails_page.transactions_list.first.click
-    @transaction_page = Pages::TransactionPage.new
-    valid_transaction_id = @transaction_page.return_transaction_id
-    @find_transactions_page.load
+    valid_transaction_id = @admin_data['valid_transaction_id']
     @find_transactions_page.find_transactions_form.find_transactions_by_id type, valid_transaction_id
 end
   
@@ -27,8 +22,7 @@ Quando('busca por transação por período {string}') do |type|
 end
   
 Quando('busca por transação por valor {string}') do |type|
-    @account_datails_page.load(id: @admin_account_id)
-    valid_transaction_amount = @account_datails_page.amount_transactions.first.text.gsub('$', '')
+    valid_transaction_amount = @admin_data['valid_transaction_amount']
     @find_transactions_page.load
     @find_transactions_page.find_transactions_form.find_transactions_by_amount type, valid_transaction_amount
 end
