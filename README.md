@@ -49,7 +49,7 @@ Você pode encontrar o arquivo do mapa [clicando aqui](/mapa-mental)
 ## Execução
 ### Observações
 
-* Se você quiser utilizar a funiconalidade implementada com o Chat GPT, precisará de uma conta com créditos válidos.
+* Se você quiser utilizar a funiconalidade implementada com o Chat GPT precisará de uma conta com créditos válidos.
 <div align="center"><h1>A API DO CHAT GPT É PAGA!</h1><p>Se mesmo assim você quiser utilizá-la poderá criar uma conta no <a href='https://openai.com/'>site da OpenAI</a></div>
 
 * Após estar com sua API Key deverá adicioná-la no arquivo prd.yml que está no caminho '/features/support/factory/static/prd.yml'.
