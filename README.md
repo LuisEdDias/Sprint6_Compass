@@ -52,7 +52,7 @@ Você pode encontrar o arquivo do mapa [clicando aqui](/mapa-mental)
 * Se você quiser utilizar a funiconalidade implementada com o Chat GPT, precisará de uma conta com créditos válidos.
 <div align="center"><h1>A API DO CHAT GPT É PAGA!</h1><p>Se mesmo assim você quiser utilizá-la poderá criar uma conta no <a href='https://openai.com/'>site da OpenAI</a></div>
 
-* Após estar com sua API Key deverá configura-los no arquivo prd.yml que está no caminho '/features/support/factory/static/prd.yml'.
+* Após estar com sua API Key deverá adicioná-la no arquivo prd.yml que está no caminho '/features/support/factory/static/prd.yml'.
 
 * Dentro do arquivo encontre:
 ```
@@ -62,7 +62,7 @@ gpt_key: YOUR KEY
 
 * Depois disso basta descomentar o código entre as linhas 63 e 86 do arquivo hooks.rb no caminho '/features/support/hooks.rb'.
 
-Há algumas formas de executar os testes:
+## Há algumas formas de executar os testes:
 
 ### Todos de uma vez
 
@@ -177,7 +177,7 @@ Há algumas formas de executar os testes:
             <tr><td>@open_account_page_load</td><td>CT_020: Verificar carregamento da página de abertura de conta</td></tr>
             <tr><td>@open_checking_account</td><td>CT_021: Realizar criação de conta corrente</td></tr>
             <tr><td>@open_savings_account</td><td>CT_022: Realizar criação de conta poupança</td></tr>
-            </tbody>
+        </tbody>
     </table>
 </div>
 
@@ -191,7 +191,7 @@ Há algumas formas de executar os testes:
             <tr><td>@transfer_page_load</td><td>CT_023: Verificar carregamento da página de transferências</td></tr>
             <tr><td>@validate_transfer_form</td><td>CT_024: Validação do formulário de transferências</td></tr>
             <tr><td>@transfer_funds</td><td>CT_025: Realizar transferência válida</td></tr>
-            </tbody>
+        </tbody>
     </table>
 </div>
 
@@ -205,7 +205,7 @@ Há algumas formas de executar os testes:
             <tr><td>@bill_pay_page_load</td><td>CT_026: Verificar carregamento da página de transferências</td></tr>
             <tr><td>@validate_bill_pay_form</td><td>CT_027: Validação do formulário de pagamentos</td></tr>
             <tr><td>@valid_bill_payment</td><td>CT_028: Realizar pagamento válido</td></tr>
-            </tbody>
+        </tbody>
     </table>
 </div>
 
@@ -219,7 +219,7 @@ Há algumas formas de executar os testes:
             <tr><td>@request_loan_page_load</td><td>CT_029: Verificar carregamento da página de empréstimos</td></tr>
             <tr><td>@validate_request_loan_form</td><td>CT_030: Validação do formulário de empréstimos</td></tr>
             <tr><td>@valid_request_loan</td><td>CT_031: Realizar empréstimo válido</td></tr>
-            </tbody>
+        </tbody>
     </table>
 </div
 
@@ -234,7 +234,7 @@ Há algumas formas de executar os testes:
             <tr><td>@check_account_access</td><td>CT_033: Verificar o acesso às movimentações da conta</td></tr>
             <tr><td>@check_activity_filter</td><td>CT_034: Verificar os filtros de busca por movimentação</td></tr>
             <tr><td>@check_activity_details</td><td>CT_035: Verificar o acesso aos detalhes de uma transação</td></tr>
-            </tbody>
+        </tbody>
     </table>
 </div>
 
