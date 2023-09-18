@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.1.1)
     builder (3.2.4)
     capybara (3.35.3)
       addressable
@@ -50,6 +51,13 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     faker (2.22.0)
       i18n (>= 1.8.11, < 2)
+    faraday (2.7.11)
+      base64
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (3.0.2)
     ffi (1.15.5-x64-mingw32)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -73,6 +81,7 @@ GEM
     mime-types-data (3.2023.0808)
     mini_mime (1.1.2)
     multi_test (0.1.2)
+    multipart-post (2.3.0)
     nokogiri (1.12.5-x64-mingw32)
       racc (~> 1.4)
     pry (0.14.2)
@@ -99,6 +108,10 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.1)
+    ruby-openai (5.1.0)
+      faraday (>= 1)
+      faraday-multipart (>= 1)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
@@ -124,9 +137,11 @@ DEPENDENCIES
   capybara (= 3.35.3)
   cucumber (= 7.1.0)
   faker (= 2.22.0)
-  http
+  http (= 5.1.1)
+  nokogiri (= 1.12.5)
   pry
   rspec (= 3.12.0)
+  ruby-openai (= 5.1.0)
   selenium-webdriver (= 4.1.0)
   site_prism (= 3.7.3)
 

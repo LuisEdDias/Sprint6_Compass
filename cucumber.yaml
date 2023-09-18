@@ -1,4 +1,5 @@
 default: --format pretty -p prd -p html
+no_report: --format pretty -p prd
 
 # Reporters
 html: --format html --out=reports/report.html
