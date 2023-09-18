@@ -92,8 +92,8 @@ gpt_key: YOUR KEY
    ```
 * As funcionalidades com testes são:
 
-<div align="center">
-    <table border="1">
+<div>
+    <table border="1" align="center">
         <thead>
             <tr><th>TAG</th><th>FUNCIONALIDADE</th></tr>
         </thead>
@@ -115,11 +115,11 @@ gpt_key: YOUR KEY
 
 * Também é possível executar cada cenário de teste exclusivamente conforme a tabela abaixo:
 
-<div align="center">
-    <table border="1">
+<div>
+    <table border="1" align="center">
         <thead>
             <tr><th colspan="2" style="text-align:center">HOME PAGE</th></tr>
-            <tr><th style="text-align:center" width="250">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
+            <tr><th style="text-align:center" width="270">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
         </thead>
         <tbody>
             <tr><td>@home_page_load</td><td>CT_001: Verificar carregamento da Home Page</td></tr>
@@ -132,11 +132,11 @@ gpt_key: YOUR KEY
     </table>
 </div>
 
-<div align="center">
-    <table border="1">
+<div>
+    <table border="1" align="center">
         <thead>
             <tr><th colspan="2" style="text-align:center">REGISTER</th></tr>
-            <tr><th style="text-align:center" width="250">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
+            <tr><th style="text-align:center" width="270">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
         </thead>
         <tbody>
             <tr><td>@register_page_load</td><td>CT_007: Verificar carregamento da página de cadastro</td></tr>
@@ -146,11 +146,11 @@ gpt_key: YOUR KEY
     </table>
 </div>
 
-<div align="center">
-    <table border="1">
+<div>
+    <table border="1" align="center">
         <thead>
             <tr><th colspan="2" style="text-align:center">LOGIN</th></tr>
-            <tr><th style="text-align:center" width="250">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
+            <tr><th style="text-align:center" width="270">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
         </thead>
         <tbody>
             <tr><td>@validate_login_form</td><td>CT_010: Validação dos campos do login</td></tr>
@@ -167,11 +167,11 @@ gpt_key: YOUR KEY
     </table>
 </div>
 
-<div align="center">
-    <table border="1">
+<div>
+    <table border="1" align="center">
         <thead>
             <tr><th colspan="2" style="text-align:center">OPEN NEW ACCOUNT</th></tr>
-            <tr><th style="text-align:center" width="250">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
+            <tr><th style="text-align:center" width="270">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
         </thead>
         <tbody>
             <tr><td>@open_account_page_load</td><td>CT_020: Verificar carregamento da página de abertura de conta</td></tr>
@@ -181,11 +181,11 @@ gpt_key: YOUR KEY
     </table>
 </div>
 
-<div align="center">
-    <table border="1">
+<div>
+    <table border="1" align="center">
         <thead>
             <tr><th colspan="2" style="text-align:center">TRANSFER FUNDS</th></tr>
-            <tr><th style="text-align:center" width="250">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
+            <tr><th style="text-align:center" width="270">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
         </thead>
         <tbody>
             <tr><td>@transfer_page_load</td><td>CT_023: Verificar carregamento da página de transferências</td></tr>
@@ -195,11 +195,11 @@ gpt_key: YOUR KEY
     </table>
 </div>
 
-<div align="center">
-    <table border="1">
+<div>
+    <table border="1" align="center">
         <thead>
             <tr><th colspan="2" style="text-align:center">BILL PAY</th></tr>
-            <tr><th style="text-align:center" width="250">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
+            <tr><th style="text-align:center" width="270">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
         </thead>
         <tbody>
             <tr><td>@bill_pay_page_load</td><td>CT_026: Verificar carregamento da página de transferências</td></tr>
@@ -209,11 +209,11 @@ gpt_key: YOUR KEY
     </table>
 </div>
 
-<div align="center">
-    <table border="1">
+<div>
+    <table border="1" align="center">
         <thead>
             <tr><th colspan="2" style="text-align:center">REQUEST LOAN</th></tr>
-            <tr><th style="text-align:center" width="250">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
+            <tr><th style="text-align:center" width="270">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
         </thead>
         <tbody>
             <tr><td>@request_loan_page_load</td><td>CT_029: Verificar carregamento da página de empréstimos</td></tr>
@@ -223,11 +223,11 @@ gpt_key: YOUR KEY
     </table>
 </div
 
-<div align="center">
-    <table border="1">
+<div>
+    <table border="1" align="center">
         <thead>
             <tr><th colspan="2" style="text-align:center">ACCOUNTS OVERVIEW</th></tr>
-            <tr><th style="text-align:center" width="250">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
+            <tr><th style="text-align:center" width="270">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
         </thead>
         <tbody>
             <tr><td>@accounts_overview_page_load</td><td>CT_032: Verificar carregamento da página de visualização geral das contas</td></tr>
@@ -238,11 +238,11 @@ gpt_key: YOUR KEY
     </table>
 </div>
 
-<div align="center">
-    <table border="1">
+<div>
+    <table border="1" align="center">
         <thead>
             <tr><th colspan="2" style="text-align:center">FIND TRANSACTIONS</th></tr>
-            <tr><th style="text-align:center" width="250">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
+            <tr><th style="text-align:center" width="270">TAG</th><th style="text-align:center" width="500">CENÁRIO</th></tr>
         </thead>
         <tbody>
             <tr><td>@find_transactions_page_load</td><td>CT_036: Verificar carregamento da página de busca por transações</td></tr>
