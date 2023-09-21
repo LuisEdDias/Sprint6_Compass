@@ -32,13 +32,13 @@ end
   
 Então('deve ver uma mensagem de transferência realizada com sucesso') do
     transfer_success_message = Factory::Static.static_data('message')['transfer_success_message']
-    expect(@transfer_page.transfer_success_message.has_text?(transfer_success_message)).to be_truthy
+    expect(@transfer_page.transfer_success_message.has_text? transfer_success_message).to be_truthy
 end
   
 Então('as contas de origem e destino estão com os valores corretos') do
     @accounts_overview.load
     new_origin_balance = @accounts_overview.accounts_list.last.account_balance.gsub('$', '').to_f
     new_target_balance = @accounts_overview.accounts_list.first.account_balance.gsub('$', '').to_f
-    expect(new_origin_balance).to eq (@expect_origin_balance.round(2))
-    expect(new_target_balance).to eq (@expect_traget_balance.round(2))
+    expect(new_origin_balance).to eq (@expect_origin_balance.round 2)
+    expect(new_target_balance).to eq (@expect_traget_balance.round 2)
 end

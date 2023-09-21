@@ -14,7 +14,7 @@ module Pages
         section :customer_login, Sections::CustomerLogin, '#loginPanel'
         section :login_recovery_form, Sections::LoginRecoveryForm, '#lookupForm'
 
-        element :login_recovery_message,         '#rightPanel p'
+        element :login_recovery_message, '#rightPanel p'
         element :login_recovery_success_message, '#rightPanel p+p'
 
         expected_elements :header, :footer, :login_recovery_form
@@ -31,7 +31,7 @@ module Pages
                 login_recovery_form.label_ssn.has_text?(error_message['ssn_required'])
             elsif data == 'special_character' || data == 'only_numbers'
                 error_message = Factory::Static.static_data 'message'
-                login_recovery_message.has_text?(error_message['login_recovery_not_found'])
+                login_recovery_message.has_text? error_message['login_recovery_not_found']
             end
         end
     end

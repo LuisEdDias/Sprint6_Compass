@@ -15,7 +15,6 @@ module Sections
         element :input_username, '[name="customer.username"]'
         element :input_password, '[name="customer.password"]'
         element :input_confirm_password, '[name="repeatedPassword"]'
-
         element :btn_register, '.button'
 
         def complete_registration_form data
@@ -33,19 +32,6 @@ module Sections
                     input_username.set registration_form[:username]
                     input_password.set registration_form[:password]
                     input_confirm_password.set registration_form[:password]
-                elsif data == 'valid_user_data'
-                    registration_form = Factory::Static.static_data 'valid_user_data'
-                    input_first_name.set registration_form['first_name']
-                    input_last_name.set registration_form['last_name']
-                    input_address.set registration_form['address']
-                    input_city.set registration_form['city']
-                    input_state.set registration_form['state']
-                    input_zip_code.set registration_form['zip_code']
-                    input_phone.set registration_form['phone']
-                    input_ssn.set registration_form['ssn']
-                    input_username.set registration_form['username']
-                    input_password.set registration_form['password']
-                    input_confirm_password.set registration_form['password']
                 else
                     registration_form = Factory::Dynamic.valid_data_form
                     input_first_name.set registration_form[:first_name]
@@ -74,6 +60,7 @@ module Sections
                     end
                 end
             end
+            
             btn_register.click
         end
     end

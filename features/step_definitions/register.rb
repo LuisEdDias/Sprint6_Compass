@@ -21,5 +21,5 @@ end
   
 Então('é exibida uma menssagem de sucesso') do
     success_message = Factory::Static.static_data('message')['account_register_success_message']
-    expect(@register_page.account_register_success_message.has_text?(success_message)).to be_truthy
+    expect(@register_page.account_register_success_message.has_text? success_message).to be_truthy
 end

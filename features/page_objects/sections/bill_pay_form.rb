@@ -18,7 +18,6 @@ module Sections
         element :btn_send, '.button'
 
         def complete_bill_pay_form data
-            sleep 1
             if data != 'empty'
                 if data == 'special_character' || data == 'only_numbers'
                     bill_pay_data = Factory::Dynamic.public_send(data + '_form')
@@ -69,7 +68,7 @@ module Sections
                 end
             end
 
-            select_origin_account.first.click
+            select_origin_account.first.select_option
             btn_send.click
         end
     end

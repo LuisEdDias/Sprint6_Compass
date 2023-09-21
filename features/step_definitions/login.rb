@@ -4,7 +4,7 @@ end
   
 Então('é exibida uma mensagem {string} para login inválido') do |message|
     login_message = Factory::Static.static_data('message')[message]
-    expect(@home.login_error_message.has_text?(login_message)).to be_truthy
+    expect(@home.login_error_message.has_text? login_message).to be_truthy
 end
 
 Quando('realiza login válido') do
@@ -41,9 +41,9 @@ Quando('preenche o formulário de recuperação de login com dados validos') do
 end
   
 Então('o login é recuperado com sucesso') do
-    login = Factory::Static.static_data('admin_user_data')
-    expect(@forgot_login_page.login_recovery_success_message.has_text?(login['username'])).to be_truthy
-    expect(@forgot_login_page.login_recovery_success_message.has_text?(login['password'])).to be_truthy
+    login = Factory::Static.static_data 'admin_user_data'
+    expect(@forgot_login_page.login_recovery_success_message.has_text? login['username']).to be_truthy
+    expect(@forgot_login_page.login_recovery_success_message.has_text? login['password']).to be_truthy
 end
 
 Quando('preenche o formulário de recuperação de login com dados invalidos') do
@@ -52,7 +52,7 @@ end
   
 Então('é exibida a mensagem de login não encontrado') do
     recovery_message = Factory::Static.static_data('message')['login_recovery_not_found']
-    expect(@forgot_login_page.login_recovery_message.has_text?(recovery_message)).to be_truthy
+    expect(@forgot_login_page.login_recovery_message.has_text? recovery_message).to be_truthy
 end
 
 Dado('que esteja na home page e logado no sistema') do
@@ -85,7 +85,7 @@ end
   
 Então('os dados são atualizados com sucesso') do
     update_profile_message = Factory::Static.static_data('message')['update_profile_success_message']
-    expect(@update_profile_page.update_profile_message.has_text?(update_profile_message)).to be_truthy
+    expect(@update_profile_page.update_profile_message.has_text? update_profile_message).to be_truthy
 end
   
 Quando('realiza logout') do

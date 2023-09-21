@@ -10,7 +10,7 @@ module Sections
             when 'valid'
                 !transactions_result_list.empty?
             when 'invalid'
-                find_transactions_error.visible?
+                transactions_result_list.empty?
             when 'letters'
                 find_transactions_error.visible?
             when 'special_character'

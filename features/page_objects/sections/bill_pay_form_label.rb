@@ -34,6 +34,8 @@ module Sections
                 label_account_confirme_empty.visible? &&
                 label_amount_empty.visible?
             when 'special_character' 
+                # SEM VALIDAÇÃO
+                
                 #label_payee_name_invalid.visible? &&
                 #label_address_invalid.visible? &&
                 #label_city_invalid.visible? &&
@@ -44,12 +46,16 @@ module Sections
                 label_account_confirme_invalid.visible? &&
                 label_amount_invalid.visible?
             when 'letters'
+                # SEM VALIDAÇÃO
+
                 #label_zip_code_invalid.visible? &&
                 #label_phone_invalid.visible? &&
                 label_account_invalid.visible? &&
                 label_account_confirme_invalid.visible? &&
                 label_amount_invalid.visible?
             when 'only_numbers'
+                # SEM VALIDAÇÃO
+
                 #label_payee_name_invalid.visible? &&
                 #label_address_invalid.visible? &&
                 #label_city_invalid.visible? &&

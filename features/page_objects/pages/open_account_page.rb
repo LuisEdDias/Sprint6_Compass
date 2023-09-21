@@ -13,9 +13,9 @@ module Pages
         section :account_services_menu, Sections::AccountServicesMenu, '#leftPanel'
 
         elements :select_origin_account, '#fromAccountId option'
+        elements :select_type_account, '#type option'
 
-        element :set_checking_account, '#type [value="0"]'
-        element :set_savings_account, '#type [value="1"]'
+        element :select_type_acc, '#type'
         element :btn_open_account, '#rightPanel .button'
         element :open_account_success_message, '#rightPanel p'
         element :new_account_link, '#newAccountId'

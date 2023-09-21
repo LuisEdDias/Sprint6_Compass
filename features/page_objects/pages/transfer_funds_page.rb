@@ -23,39 +23,39 @@ module Pages
         expected_elements :header, :footer, :account_services_menu, :select_origin_account, :select_target_account, :input_transfer_amount
         
         def transfer_funds data
-            sleep 1
+            SELENIUM_WAIT.until { !page.has_css? 'option[label="undefined"]' }
             case data
             when 'amount_empty'
-                select_origin_account.first.click
-                select_target_account.last.click
+                select_origin_account.first.select_option
+                select_target_account.last.select_option
             when 'amount_special_character'
                 transfer_amount = Factory::Dynamic.special_character_form
                 input_transfer_amount.set transfer_amount[:transfer_amount]
-                select_origin_account.first.click
-                select_target_account.last.click
+                select_origin_account.first.select_option
+                select_target_account.last.select_option
             when 'amount_letters'
                 transfer_amount = Factory::Dynamic.valid_data_form
                 input_transfer_amount.set transfer_amount[:first_name]
-                select_origin_account.first.click
-                select_target_account.last.click
+                select_origin_account.first.select_option
+                select_target_account.last.select_option
             when 'amount_negative'
                 transfer_amount = Factory::Dynamic.valid_data_form
                 input_transfer_amount.set (0 - transfer_amount[:transfer_amount])
-                select_origin_account.first.click
-                select_target_account.last.click
+                select_origin_account.first.select_option
+                select_target_account.last.select_option
             when 'amount_zero'
                 input_transfer_amount.set 0
-                select_origin_account.first.click
-                select_target_account.last.click
+                select_origin_account.first.select_option
+                select_target_account.last.select_option
             when 'account_same_origin_destination'
                 transfer_amount = Factory::Dynamic.valid_data_form
                 input_transfer_amount.set transfer_amount[:transfer_amount]
-                select_origin_account.first.click
-                select_target_account.first.click
+                select_origin_account.first.select_option
+                select_target_account.first.select_option
             else
                 input_transfer_amount.set data
-                select_origin_account.last.click
-                select_target_account.first.click
+                select_origin_account.last.select_option
+                select_target_account.first.select_option
             end
             
             btn_transfer.click
@@ -63,13 +63,12 @@ module Pages
 
         def transfer_funds_error data
             label_error = Factory::Static.static_data 'form_validation_label'
-            
             if data == 'amount_empty'
-                transfer_amount_label.has_text?(label_error['empty_amount'])
+                transfer_amount_label.has_text? label_error['empty_amount']
             elsif data == 'amount_special_character' || data == 'amount_letters' || data == 'amount_negative' || data == 'amount_zero'
-                transfer_amount_label.has_text?(label_error['invalid_amount'])
+                transfer_amount_label.has_text? label_error['invalid_amount']
             elsif data == 'account_same_origin_destination'
-                transfer_amount_label.has_text?(label_error['invalid_account'])
+                transfer_amount_label.has_text? label_error['invalid_account']
             end
         end
     end

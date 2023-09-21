@@ -32,5 +32,5 @@ end
 Então('o valor do pagamento deve ter sido debitado da conta') do
     @accounts_overview.load
     new_origin_balance = @accounts_overview.accounts_list.first.account_balance.gsub('$', '').to_f
-    expect(new_origin_balance).to eq (@expect_origin_balance.round(2))
+    expect(new_origin_balance).to eq (@expect_origin_balance.round 2)
 end

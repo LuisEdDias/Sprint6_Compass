@@ -15,6 +15,7 @@ module Pages
         section :account_services_menu, Sections::AccountServicesMenu, '#leftPanel'
 
         elements :news_list, '.events a'
+        
         element :news, '#rightPanel [href="news.htm"]'
         element :atm_services, 'ul.services'
         element :online_services, 'ul.servicestwo'
