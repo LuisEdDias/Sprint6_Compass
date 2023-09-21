@@ -60,26 +60,26 @@ After do |scenario|
         screenshot = Capybara.page.save_screenshot "reports/screenshots/sc.png"
         attach(screenshot, 'image/png')
 
-        gpt_key = Factory::Static.static_data 'gpt_key'
-        client = OpenAI::Client.new(access_token: gpt_key)
+        # gpt_key = Factory::Static.static_data 'gpt_key'
+        # client = OpenAI::Client.new(access_token: gpt_key)
 
-        backtrace = scenario.exception.backtrace.join("\n")
-        failure_message = scenario.exception.message
+        # backtrace = scenario.exception.backtrace.join("\n")
+        # failure_message = scenario.exception.message
 
-        prompt = "Por favor, resuma o erro em um parágrafo: #{failure_message}\n" + backtrace 
+        # prompt = "Por favor, resuma o erro em um parágrafo: #{failure_message}\n" + backtrace 
 
-        response = client.chat(
-            parameters: {
-                model: "gpt-3.5-turbo",
-                messages: [{ role: "user", content: prompt }],
-                temperature: 0.6
-            }
-        )
+        # response = client.chat(
+        #     parameters: {
+        #         model: "gpt-3.5-turbo",
+        #         messages: [{ role: "user", content: prompt }],
+        #         temperature: 0.6
+        #     }
+        # )
 
-        gpt_response = response.dig("choices", 0, "message", "content")
+        # gpt_response = response.dig("choices", 0, "message", "content")
 
-        puts gpt_response
+        # puts gpt_response
         
-        attach(gpt_response, 'text/plain')
+        # attach(gpt_response, 'text/plain')
     end
 end

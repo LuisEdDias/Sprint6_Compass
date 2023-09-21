@@ -60,7 +60,7 @@ gpt_key: YOUR KEY
 ```
 * Substitua 'YOUR KEY' por sua API Key.
 
-* Depois disso basta descomentar o código entre as linhas 63 e 86 do arquivo hooks.rb no caminho '/features/support/hooks.rb'.
+* Depois disso basta descomentar o código entre as linhas 63 e 83 do arquivo hooks.rb no caminho '/features/support/hooks.rb'.
 
 ## Há algumas formas de executar os testes:
 
