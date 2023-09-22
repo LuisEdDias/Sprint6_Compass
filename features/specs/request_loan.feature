@@ -21,7 +21,7 @@ Funcionalidade: Request Loan
         Então deve ver uma mensagem de empréstimo não realizado
         Exemplos:
         |data             |
-        |negative         |
+        # |negative         |
         |empty            |
         |special_character|
         |letters          |

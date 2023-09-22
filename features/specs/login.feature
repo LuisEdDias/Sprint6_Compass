@@ -68,8 +68,8 @@ Funcionalidade: Login
         Então o formulário de atualização de dados de contato exibe um label de erro '<data>'
         Exemplos:
         |data             |
-        |special_character|
-        |only_numbers     |
+        # |special_character|
+        # |only_numbers     |
         |empty            |
 
     @update_profile

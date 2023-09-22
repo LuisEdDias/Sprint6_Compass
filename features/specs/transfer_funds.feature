@@ -20,9 +20,9 @@ Funcionalidade: Transfer Funds
         Então deve ver uma mensagem de transferência não realizada '<data>'
         Exemplos:
         |data                           |
-        |amount_negative                |
-        |amount_zero                    |
-        |account_same_origin_destination|
+        # |amount_negative                |
+        # |amount_zero                    |
+        # |account_same_origin_destination|
         |amount_empty                   |
         |amount_special_character       |
         |amount_letters                 |

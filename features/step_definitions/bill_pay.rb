@@ -1,6 +1,7 @@
 Dado('que acessa a página de pagamento de contas') do
     @bill_pay_page = Pages::BillPayPage.new
     @bill_pay_page.load
+    @accounts_overview = Pages::AccountsOverviewPage.new 
 end
   
 Então('a página de pagamentos é exibida corretamente') do
@@ -16,7 +17,6 @@ Então('deve ver uma mensagem de pagamneto não realizado {string}') do |data|
 end
   
 Quando('realiza um pagamento válido') do
-    @accounts_overview = Pages::AccountsOverviewPage.new
     @accounts_overview.load
     origin_balance = @accounts_overview.accounts_list.first.account_balance.gsub('$', '').to_f
     @bill_pay_page.load

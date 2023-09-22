@@ -1,6 +1,7 @@
 Dado('que acessa a página de empréstimos') do
     @home.click_link 'request_loan', 'account_services_menu'
     @request_loan_page = Pages::RequestLoanPage.new
+    @accounts_overview = Pages::AccountsOverviewPage.new
 end
   
 Então('a página de empréstimos é exibida corretamente') do
@@ -17,7 +18,6 @@ Então('deve ver uma mensagem de empréstimo não realizado') do
 end
 
 Quando('realiza um empréstimo com dados válidos') do
-    @accounts_overview = Pages::AccountsOverviewPage.new
     @accounts_overview.load
     origin_balance = @accounts_overview.accounts_list.first.account_balance.gsub('$', '').to_f
     @request_loan_page.load

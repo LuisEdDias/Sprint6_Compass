@@ -4,8 +4,7 @@ module Sections
     class BillPayForm < SitePrism::Section
         section :bill_pay_form_label, Sections::BillPayFormLabel, '.form2'
 
-        elements :select_origin_account, '[name="fromAccountId"] option'
-
+        element :select_origin_account, '[name="fromAccountId"] [value="13344"]'
         element :input_payee_name, '[name="payee.name"]'
         element :input_address, '[name="payee.address.street"]'
         element :input_city, '[name="payee.address.city"]'
@@ -68,7 +67,7 @@ module Sections
                 end
             end
 
-            select_origin_account.first.select_option
+            select_origin_account.select_option
             btn_send.click
         end
     end
