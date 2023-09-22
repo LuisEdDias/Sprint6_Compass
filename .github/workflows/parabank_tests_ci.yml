@@ -32,4 +32,4 @@ jobs:
         gem install bundler
         bundle install
     - name: Run tests
-      run: cucumber -p default -p chrome -p headless --retry 2 
+      run: cucumber -p default -p chrome -p headless --retry 2 --publish
