@@ -1,5 +1,3 @@
-<div align="center"><img src="https://media.licdn.com/dms/image/C4D16AQElB0y1d5svPg/profile-displaybackgroundimage-shrink_200_800/0/1658867832742?e=2147483647&v=beta&t=i56I1rSG-TTCSP6hZbam6Wo9gwZINgRKqeXGKuCwP0w" tittle="compass.uol"></div>
-
 # Automação de testes Web - Estágio QA Compass.UOL
 
 Este é um projeto de automação do site ParaBank desenvolvido durante a Sprint 6 do programa de bolsas da empresa Compass.UOL. 
@@ -27,11 +25,11 @@ Você pode encontrar o arquivo do mapa [clicando aqui](/mapa-mental)
 
 3. Digite estes comandos no terminal para clonar os arquivos:
    ```
-   git clone https://github.com/LuisDiasCompass/Sprint6_LuisDias_Compass.git
+   git clone https://github.com/LuisEdDias/Sprint6_LuisDias_Compass.git
 
    ```
 
-   Você também pode baixar o [arquivo zip](https://github.com/LuisDiasCompass/Sprint6_LuisDias_Compass/archive/refs/heads/main.zip) e descompactar na sua pasta.
+   Você também pode baixar o [arquivo zip](https://github.com/LuisEdDias/Sprint6_LuisDias_Compass/archive/refs/heads/main.zip) e descompactar na sua pasta.
 
 4. Abra o terminal de comando do seu computador na pasta "Sprint6_LuisDias_Compass" e digite o comando abaixo para instalar as gems necessárias:
 
@@ -289,4 +287,4 @@ gpt_key: YOUR KEY
 Este repositório contém códigos, exercícios e informações relacionados ao meu estágio no Studio Quality & Test Automation da Compass.UOL. Fique à vontade para utilizar e me enviar mensagem para dúvidas, feedbacks ou sugestões.
 
 ## Contato
-### Luís Eduardo Dias, [Enviar e-mail](mailto:luis.dias.pb@compasso.com.br).
+### Linkedin [Luís Eduardo Vahl Dias](https://www.linkedin.com/in/luisvdias94/).
