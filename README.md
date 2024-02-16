@@ -24,29 +24,23 @@ Você pode encontrar o arquivo do mapa [clicando aqui](/mapa-mental)
 2. Crie uma pasta onde você colocará os arquivos e abra um terminal do Git Bash a partir dela. Para isso você também precisa ter o [Git](https://git-scm.com/) instalado em seu computador.
 
 3. Digite estes comandos no terminal para clonar os arquivos:
+   
    ```
-<<<<<<< HEAD
-   git clone https://github.com/LuisEdDias/Sprint6_LuisDias_Compass.git
-
-   ```
-
-   Você também pode baixar o [arquivo zip](https://github.com/LuisEdDias/Sprint6_LuisDias_Compass/archive/refs/heads/main.zip) e descompactar na sua pasta.
-=======
    git clone https://github.com/LuisEdDias/Sprint6_Compass.git
 
    ```
 
    Você também pode baixar o [arquivo zip](https://github.com/LuisEdDias/Sprint6_Compass/archive/refs/heads/main.zip) e descompactar na sua pasta.
->>>>>>> develop
 
-4. Abra o terminal de comando do seu computador na pasta "Sprint6_Compass" e digite o comando abaixo para instalar as gems necessárias:
+
+5. Abra o terminal de comando do seu computador na pasta "Sprint6_Compass" e digite o comando abaixo para instalar as gems necessárias:
 
    ```
    bundle install
 
    ```
 
-5. Pelo menos um dos navegadores abaixo precisa estar diponível, com webdriver compatível:
+6. Pelo menos um dos navegadores abaixo precisa estar diponível, com webdriver compatível:
 
 * Google Chrome, assim como o ChromeDriver da versão compatível com seu navegador que pode ser baixada [neste link](https://chromedriver.chromium.org/downloads) 
 * Microsoft Edge, assim como o Microsoft Edge Webdriver da versão compatível com seu navegador que pode ser baixada [neste link](https://developer.microsoft.com/pt-br/microsoft-edge/tools/webdriver/)
