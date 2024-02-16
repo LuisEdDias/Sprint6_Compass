@@ -55,10 +55,10 @@ BeforeAll do
     end
 end
 
-# After do |scenario|
-#     if scenario.failed?
-#         screenshot = Capybara.page.save_screenshot "reports/screenshots/sc.png"
-#         attach(screenshot, 'image/png')
+After do |scenario|
+    if scenario.failed?
+        screenshot = Capybara.page.save_screenshot "reports/screenshots/sc.png"
+        attach(screenshot, 'image/png')
 
         # gpt_key = Factory::Static.static_data 'gpt_key'
         # client = OpenAI::Client.new(access_token: gpt_key)
@@ -81,5 +81,5 @@ end
         # puts gpt_response
         
         # attach(gpt_response, 'text/plain')
-#     end
-# end
+    end
+end

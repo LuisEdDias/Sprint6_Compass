@@ -1,5 +1,3 @@
-<div align="center"><img src="https://media.licdn.com/dms/image/C4D16AQElB0y1d5svPg/profile-displaybackgroundimage-shrink_200_800/0/1658867832742?e=2147483647&v=beta&t=i56I1rSG-TTCSP6hZbam6Wo9gwZINgRKqeXGKuCwP0w" tittle="compass.uol"></div>
-
 # Automação de testes Web - Estágio QA Compass.UOL
 
 Este é um projeto de automação do site ParaBank desenvolvido durante a Sprint 6 do programa de bolsas da empresa Compass.UOL. 
@@ -9,9 +7,9 @@ do ParaBank
 
 Além disso, como adicional de inovação foi implementada uma solução utilizando a API do Chat GPT. 
 
-Caso um cenário de teste falhe durante a execução um prompt é gerado utilizando o backtrace e a mensagem de erro da falha e enviado no corpo da requisição para API do Chat GPT, solicitando uma possível explicação sobre o erro. Então, a mensagem de resposta é capturada, impressa no terminal e anexada no relatório.
+Caso um cenário de teste falhe durante a execução um prompt é gerado utilizando o backtrace e a mensagem de erro da falha e enviado no corpo da requisição para API do Chat GPT, solicitando uma possível explicação sobre o erro. Então, a mensagem de resposta é capturada, impressa no terminal e anexada ao relatório.
 
-Embora da forma que foi implementada a solução não tenha valor real de utilização, sua elaboração foi importante em relação ao aprendizado adquirido, servindo de base para utilização de inteligência artificial em projetos futuros já que essa tecnologia é cada vez mais relevante.
+Embora da forma que foi implementada a solução não tenha valor real de utilização, sua elaboração foi importante em relação ao aprendizado adquirido, servindo de base para utilização de inteligência artificial em projetos futuros, já que essa tecnologia é cada vez mais relevante.
 
 ## Mapa do site ParaBank
 
@@ -21,19 +19,19 @@ Você pode encontrar o arquivo do mapa [clicando aqui](/mapa-mental)
 
 ## Preparando o ambiente para execução dos testes
 
-1. Certifique-se de ter o Ruby instalado em seu sistema. Se não tiver, você pode baixá-lo e instalá-lo a partir do site oficial: [Ruby Lang](https://www.ruby-lang.org/). Os testes foram desenvolvidos na versão 2.6.3, caso você utilize outra versão poderão ocorrer erros inesperados.
+1. Certifique-se de ter o Ruby instalado em seu sistema. Se não tiver, você pode baixá-lo e instalá-lo a partir do site oficial: [Ruby Lang](https://www.ruby-lang.org/). Os testes foram desenvolvidos na versão 3.3.0, caso você utilize outra versão poderão ocorrer erros inesperados.
 
 2. Crie uma pasta onde você colocará os arquivos e abra um terminal do Git Bash a partir dela. Para isso você também precisa ter o [Git](https://git-scm.com/) instalado em seu computador.
 
 3. Digite estes comandos no terminal para clonar os arquivos:
    ```
-   git clone https://github.com/LuisDiasCompass/Sprint6_LuisDias_Compass.git
+   git clone https://github.com/LuisEdDias/Sprint6_Compass.git
 
    ```
 
-   Você também pode baixar o [arquivo zip](https://github.com/LuisDiasCompass/Sprint6_LuisDias_Compass/archive/refs/heads/main.zip) e descompactar na sua pasta.
+   Você também pode baixar o [arquivo zip](https://github.com/LuisEdDias/Sprint6_Compass/archive/refs/heads/main.zip) e descompactar na sua pasta.
 
-4. Abra o terminal de comando do seu computador na pasta "Sprint6_LuisDias_Compass" e digite o comando abaixo para instalar as gems necessárias:
+4. Abra o terminal de comando do seu computador na pasta "Sprint6_Compass" e digite o comando abaixo para instalar as gems necessárias:
 
    ```
    bundle install
@@ -258,6 +256,9 @@ gpt_key: YOUR KEY
  * Após a execução dos testes o relatório se encontrará na pasta 'reports' com o nome de 'report.html'.
  * Você pode ver um relatório de execução dos testes na pasta. [Click aqui](/reports), baixe o arquivo 'report.htm' e abra no seu navegador.
 
+## Docker
+Ao gerar e rodar uma imagem do Docker a partir do [Dockerfile](/Dockerfile), todos os testes serão executados. O relatório estará disponível em um link do Cucumber Report gerado ao final da execução.
+
 ## Referências
    
 ### Documentação Cucumber
@@ -289,4 +290,4 @@ gpt_key: YOUR KEY
 Este repositório contém códigos, exercícios e informações relacionados ao meu estágio no Studio Quality & Test Automation da Compass.UOL. Fique à vontade para utilizar e me enviar mensagem para dúvidas, feedbacks ou sugestões.
 
 ## Contato
-### Luís Eduardo Dias, [Enviar e-mail](mailto:luis.dias.pb@compasso.com.br).
+### Linkedin [Luís Eduardo Vahl Dias](https://www.linkedin.com/in/luisvdias94/).
