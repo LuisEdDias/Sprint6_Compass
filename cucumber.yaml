@@ -13,5 +13,8 @@ chrome: BROWSER='my_chrome'
 edge: BROWSER='my_edge'
 firefox: BROWSER='my_firefox'
 
+#Docker
+container_chrome: BROWSER='container_chrome'
+
 # Visual Model
 headless: HEADLESS='true'

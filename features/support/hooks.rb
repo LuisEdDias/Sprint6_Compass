@@ -1,4 +1,4 @@
-require 'openai'
+# require 'openai'
 require 'http'
 require 'nokogiri'
 
