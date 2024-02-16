@@ -294,7 +294,6 @@ Ao gerar e rodar uma imagem do Docker a partir do [Dockerfile](/Dockerfile), tod
    * https://github.com/httprb/http
 
 ## Conteúdo do Repositório
-
 Este repositório contém códigos, exercícios e informações relacionados ao meu estágio no Studio Quality & Test Automation da Compass.UOL. Fique à vontade para utilizar e me enviar mensagem para dúvidas, feedbacks ou sugestões.
 
 ## Contato
